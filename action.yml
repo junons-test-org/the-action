@@ -1,0 +1,11 @@
+name: 'plConfig'
+description: 'Configures parcelLab repository workflows based off plconfig.yaml'
+inputs:
+  job:
+    description: 'The job to run (step 2)'
+outputs:
+  jobs:
+    description: 'The detected jobs to run (only if job is empty)'
+runs:
+  using: 'node16'
+  main: 'index.mjs'
